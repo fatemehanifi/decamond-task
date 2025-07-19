@@ -7,6 +7,12 @@ import styles from "./LoginPage.module.scss"
 export default function LoginPage() {
     return (
         <div className={styles.loginPage}>
+            <div className={styles.formColumn}>
+                <p>Login / Signup</p>
+                <p>Enter your phone number to login or signup</p>
+                <LoginForm />
+            </div>
+
             <div className={styles.imageColumn}>
                 <Image
                     src="/login-vector.jpg"
@@ -14,12 +20,6 @@ export default function LoginPage() {
                     fill
                     style={{ objectFit: "cover" }}
                 />
-            </div>
-
-            <div className={styles.formColumn}>
-                <p>ورود / ثبت نام</p>
-                <p>برای ورود یا ثبت نام شماره همراه خود را وارد کنید.</p>
-                <LoginForm />
             </div>
         </div>
     )
