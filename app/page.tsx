@@ -1,9 +1,11 @@
-import styles from "./page.module.css";
+"use client"
+
+import { useEffect } from "react";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
 
-    </div>
-  );
+    useEffect(() => {
+        redirect("/dashboard");
+    });
 }
