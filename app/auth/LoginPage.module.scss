@@ -5,7 +5,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
   padding: 40px 56px;
-  background-color: #E1DCFF;
+  background-color: #e1dcff;
 
   .imageColumn {
     position: relative;
@@ -19,7 +19,7 @@
   .formColumn {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 32px;
     padding: 56px;
@@ -28,4 +28,22 @@
     border-radius: 16px;
   }
 
+  // 🔻 Responsive Behavior
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+
+    .imageColumn {
+      display: none;
+    }
+
+    .formColumn {
+      padding: 32px 24px;
+      width: 100%;
+      height: auto;
+      box-shadow: none;
+      border-radius: 12px;
+    }
+  }
 }
