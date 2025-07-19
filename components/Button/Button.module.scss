@@ -1,11 +1,13 @@
 .button {
-  padding: 0.75rem 1.5rem;
+  width: 100%;
+  padding: 16px;
   font-size: 1rem;
   font-weight: 600;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  background-color: #5443B0;
 
   &:disabled,
   &.disabled {
@@ -16,5 +18,11 @@
   &.loading {
     opacity: 0.6;
     cursor: not-allowed;
+  }
+
+  .buttonText {
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
   }
 }
